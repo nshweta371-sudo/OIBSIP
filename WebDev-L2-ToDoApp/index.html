@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+
+        <header>
+            <p class="subtitle">MY DAILY PLANNER</p>
+
+            <h1>My To-Do List</h1>
+
+            <p class="description">
+                Organize your day, one task at a time.
+            </p>
+        </header>
+
+
+        <!-- ADD TASK -->
+
+        <section class="add-task">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What do you need to do?"
+                maxlength="100"
+            >
+
+            <button id="addTaskBtn">
+                + Add Task
+            </button>
+
+        </section>
+
+
+        <!-- PENDING TASKS -->
+
+        <section class="task-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Pending Tasks
+                    <span id="pendingCount">0 pending</span>
+                </h2>
+
+            </div>
+
+            <div id="pendingTasks" class="task-list">
+
+                <p class="empty-message">
+                    🎉 No pending tasks. You're all caught up!
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPLETED TASKS -->
+
+        <section class="task-section completed-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Completed Tasks
+                    <span id="completedCount">0 completed</span>
+                </h2>
+
+            </div>
+
+            <div id="completedTasks" class="task-list">
+
+                <p class="empty-message">
+                    Completed tasks will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                Stay organized. Stay productive.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
