@@ -1,0 +1,417 @@
+/* ===================================
+   RESET
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===================================
+   BODY
+=================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8eef7,
+            #f7f9fc
+        );
+
+    min-height: 100vh;
+
+    color: #1f2937;
+}
+
+
+/* ===================================
+   AUTH CONTAINER
+=================================== */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* ===================================
+   AUTH CARD
+=================================== */
+
+.auth-card {
+    width: 100%;
+
+    max-width: 430px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ===================================
+   LOGO
+=================================== */
+
+.logo {
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #243447;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+
+/* ===================================
+   HEADINGS
+=================================== */
+
+.auth-card h1 {
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #6b7280;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===================================
+   FORM
+=================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.form-group input:focus {
+    border-color: #243447;
+
+    box-shadow:
+        0 0 0 3px rgba(36, 52, 71, 0.1);
+}
+
+
+/* ===================================
+   PRIMARY BUTTON
+=================================== */
+
+.primary-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #243447;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+
+/* ===================================
+   ERROR / SUCCESS
+=================================== */
+
+.error-message {
+    color: #c62828;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+    min-height: 18px;
+}
+
+
+.success-message {
+    color: #2e7d32;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===================================
+   SWITCH PAGE
+=================================== */
+
+.switch-page {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.switch-page a {
+    color: #243447;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===================================
+   DASHBOARD
+=================================== */
+
+.dashboard {
+    min-height: 100vh;
+}
+
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar {
+    background: #243447;
+
+    color: white;
+
+    padding: 18px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.brand {
+    font-size: 21px;
+
+    font-weight: bold;
+}
+
+
+.logout-btn {
+    background: white;
+
+    color: #243447;
+
+    border: none;
+
+    padding: 9px 18px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.logout-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* ===================================
+   DASHBOARD CONTENT
+=================================== */
+
+.dashboard-content {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+}
+
+
+.welcome-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    background: white;
+
+    text-align: center;
+
+    padding: 50px 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+.dashboard-icon {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+
+.welcome-card h1 {
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+}
+
+
+.welcome-card > p {
+    color: #6b7280;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===================================
+   USER INFO
+=================================== */
+
+.user-info {
+    background: #f3f6fa;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+
+.user-info p {
+    margin: 10px 0;
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 600px) {
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+
+    .brand {
+        font-size: 17px;
+    }
+
+
+    .welcome-card {
+        padding: 35px 20px;
+    }
+
+
+    .welcome-card h1 {
+        font-size: 27px;
+    }
+
+}
